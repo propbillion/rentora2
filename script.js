@@ -31,7 +31,9 @@ var ICON = {
   fuel:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h12V4a2 2 0 00-2-2H5a2 2 0 00-2 2v18z"/><path d="M15 8h2a2 2 0 012 2v6a2 2 0 002 2 2 2 0 002-2V9.83a2 2 0 00-.59-1.42L19 5"/></svg>',
   deposit:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>',
   cal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
-  lock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>'
+  lock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg>'
 };
 
 var $  = function(s,c){return (c||document).querySelector(s);};
@@ -49,8 +51,8 @@ var CITIES = ["Pune","Lonavala","Mahabaleshwar","Mumbai","Goa"];
    ===================================================================== */
 var BIKES = [
   {
-    "slug": "activa23",
-    "name": "Honda Activa",
+    "slug": "activa6g-a",
+    "name": "Honda Activa 6G",
     "brand": "Honda",
     "year": 2023,
     "cat": "Scooter",
@@ -60,16 +62,16 @@ var BIKES = [
       "activa-red"
     ],
     "rating": 4.9,
-    "reviews": 682,
+    "reviews": 247,
     "locations": [
       "Wakad",
       "Baner",
       "Hinjawadi"
     ],
-    "daily": 499,
-    "weekly": 2299,
-    "half": 3799,
-    "monthly": 6999,
+    "daily": 599,
+    "weekly": 2899,
+    "half": 4399,
+    "monthly": 6599,
     "deposit": 1000,
     "km": "100 KM/Day",
     "extra_km": "Rs 6/KM",
@@ -81,8 +83,8 @@ var BIKES = [
     "note": ""
   },
   {
-    "slug": "activa22",
-    "name": "Honda Activa",
+    "slug": "activa6g-b",
+    "name": "Honda Activa 6G",
     "brand": "Honda",
     "year": 2022,
     "cat": "Scooter",
@@ -92,15 +94,15 @@ var BIKES = [
       "activa-red"
     ],
     "rating": 4.8,
-    "reviews": 574,
+    "reviews": 213,
     "locations": [
       "Wakad",
       "Wagholi"
     ],
-    "daily": 479,
-    "weekly": 2199,
-    "half": 3699,
-    "monthly": 6799,
+    "daily": 549,
+    "weekly": 2799,
+    "half": 4499,
+    "monthly": 6999,
     "deposit": 1000,
     "km": "100 KM/Day",
     "extra_km": "Rs 6/KM",
@@ -123,7 +125,7 @@ var BIKES = [
       "activa-grey"
     ],
     "rating": 4.7,
-    "reviews": 521,
+    "reviews": 168,
     "locations": [
       "Baner",
       "Viman Nagar"
@@ -154,7 +156,7 @@ var BIKES = [
       "jupiter-teal"
     ],
     "rating": 4.8,
-    "reviews": 498,
+    "reviews": 192,
     "locations": [
       "Wakad",
       "Hinjawadi"
@@ -185,7 +187,7 @@ var BIKES = [
       "jupiter-teal"
     ],
     "rating": 4.6,
-    "reviews": 456,
+    "reviews": 134,
     "locations": [
       "Wagholi",
       "Baner"
@@ -216,7 +218,7 @@ var BIKES = [
       "jupiter-grey"
     ],
     "rating": 4.6,
-    "reviews": 432,
+    "reviews": 86,
     "locations": [
       "Viman Nagar"
     ],
@@ -246,7 +248,7 @@ var BIKES = [
       "jawa"
     ],
     "rating": 4.9,
-    "reviews": 724,
+    "reviews": 221,
     "locations": [
       "Wakad",
       "Baner"
@@ -277,7 +279,7 @@ var BIKES = [
       "duke"
     ],
     "rating": 4.8,
-    "reviews": 611,
+    "reviews": 178,
     "locations": [
       "Hinjawadi",
       "Baner"
@@ -307,7 +309,7 @@ var BIKES = [
       "harley"
     ],
     "rating": 5.0,
-    "reviews": 812,
+    "reviews": 289,
     "locations": [
       "Baner"
     ],
@@ -336,7 +338,7 @@ var BIKES = [
       "ninja"
     ],
     "rating": 4.9,
-    "reviews": 678,
+    "reviews": 276,
     "locations": [
       "Hinjawadi"
     ],
@@ -365,7 +367,7 @@ var BIKES = [
       "rc390"
     ],
     "rating": 4.8,
-    "reviews": 592,
+    "reviews": 254,
     "locations": [
       "Baner"
     ],
@@ -394,7 +396,7 @@ var BIKES = [
       "g310r"
     ],
     "rating": 4.9,
-    "reviews": 534,
+    "reviews": 231,
     "locations": [
       "Wakad"
     ],
@@ -423,7 +425,7 @@ var BIKES = [
       "dominar"
     ],
     "rating": 4.7,
-    "reviews": 489,
+    "reviews": 208,
     "locations": [
       "Hinjawadi"
     ],
@@ -452,7 +454,7 @@ var BIKES = [
       "benelli"
     ],
     "rating": 4.7,
-    "reviews": 445,
+    "reviews": 217,
     "locations": [
       "Baner"
     ],
@@ -481,7 +483,7 @@ var BIKES = [
       "interceptor"
     ],
     "rating": 4.9,
-    "reviews": 701,
+    "reviews": 283,
     "locations": [
       "Wakad",
       "Baner"
@@ -511,7 +513,7 @@ var BIKES = [
       "gt650"
     ],
     "rating": 4.8,
-    "reviews": 623,
+    "reviews": 245,
     "locations": [
       "Baner"
     ],
@@ -540,7 +542,7 @@ var BIKES = [
       "himalayan"
     ],
     "rating": 4.9,
-    "reviews": 756,
+    "reviews": 298,
     "locations": [
       "Hinjawadi",
       "Baner"
@@ -570,7 +572,7 @@ var BIKES = [
       "rr310"
     ],
     "rating": 4.8,
-    "reviews": 567,
+    "reviews": 226,
     "locations": [
       "Wakad"
     ],
@@ -599,7 +601,7 @@ var BIKES = [
       "r15"
     ],
     "rating": 4.8,
-    "reviews": 689,
+    "reviews": 262,
     "locations": [
       "Hinjawadi"
     ],
@@ -619,23 +621,117 @@ var BIKES = [
   }
 ];
 
-/* Common rental rules (apply to all bikes) */
-var RULES = [
-  "Original Aadhaar Card and Original Driving License mandatory at pickup.",
-  "All original documents must be presented at the time of pickup.",
-  "Fuel charges are not included in the security deposit or rent.",
-  "Security deposit is refundable; settled within 30 minutes after return.",
-  "Vehicle damage is chargeable as per the Authorised Service Center.",
-  "Helmet damage is chargeable to the customer.",
-  "Speed limits: non-gear 60 km/h, gear 90 km/h. Each violation = Rs 1000 fine.",
-  "Complimentary helmet for the first day only; extra days chargeable.",
-  "Immediate cancellation will not be entertained.",
+/* Key terms shown visibly near booking (orange). Edit here. */
+var VISIBLE_TERMS = [
+  "Original Aadhaar Card & Original Driving License mandatory at pickup.",
+  "Fuel charges are not included.",
+  "Security Deposit refundable within 30 minutes after vehicle return.",
+  "Vehicle damage chargeable as per Authorised Service Center.",
+  "Helmet damage chargeable to customer.",
+  "Speed Limit — Non-gear: 60 km/h, Gear: 90 km/h. Fine: ₹1,000 per violation.",
+  "Complimentary helmet only for the first day.",
   "Any proceeding hour will be considered a full day.",
-  "You receive a clean bike; return it in the same clean condition.",
-  "We do not provide cheap or unsafe complimentary helmets.",
-  "Working professional proof + residential proof required.",
-  "Late return: Rs 200 per hour, considering impact on subsequent bookings.",
-  "Out-of-state transport of the vehicle is not allowed."
+  "Return bike in same clean condition.",
+  "Working Professional Proof + Residential Proof required.",
+  "Late Return: ₹200/hour.",
+  "Out-of-state travel not allowed."
+];
+
+/* Detailed legal terms shown inside the popup. Edit here. */
+var POPUP_TERMS = [
+  [
+    "Eligibility & Documents",
+    [
+      "Rider must be 18+.",
+      "Original documents mandatory at pickup.",
+      "Learner License not accepted."
+    ]
+  ],
+  [
+    "Vehicle Verification",
+    [
+      "Vehicle deemed accepted after pickup.",
+      "Existing damages must be reported immediately."
+    ]
+  ],
+  [
+    "Rental Charges",
+    [
+      "Fuel, tolls, parking and challans are excluded."
+    ]
+  ],
+  [
+    "Security Deposit",
+    [
+      "Deposit adjusted against damages or fines.",
+      "Refund processed after vehicle verification."
+    ]
+  ],
+  [
+    "Helmet Policy",
+    [
+      "Loss or damage of helmet is chargeable."
+    ]
+  ],
+  [
+    "Vehicle Usage",
+    [
+      "Only the registered rider can drive.",
+      "No alcohol or drugs while riding.",
+      "No stunts, racing or commercial use.",
+      "No interstate travel."
+    ]
+  ],
+  [
+    "Vehicle Care",
+    [
+      "Return a clean bike.",
+      "Cleaning charges may apply."
+    ]
+  ],
+  [
+    "Damage Liability",
+    [
+      "Customer is responsible for damages.",
+      "Any accident must be reported immediately."
+    ]
+  ],
+  [
+    "Repairs",
+    [
+      "No repairs without company approval."
+    ]
+  ],
+  [
+    "Late Return",
+    [
+      "₹200 per hour."
+    ]
+  ],
+  [
+    "Cancellation",
+    [
+      "Immediate cancellation is not entertained."
+    ]
+  ],
+  [
+    "Lost Items",
+    [
+      "Company is not responsible for lost items."
+    ]
+  ],
+  [
+    "Right To Refuse Service",
+    [
+      "Company may refuse booking if verification fails."
+    ]
+  ],
+  [
+    "Acceptance",
+    [
+      "Booking means acceptance of all terms."
+    ]
+  ]
 ];
 
 /* ---------- REVIEWS (carousel) ---------- */
@@ -680,15 +776,32 @@ function fmt(d){ return new Date(d.getTime()-d.getTimezoneOffset()*60000).toISOS
 function prettyDT(v){ if(!v) return "\u2014"; var d=new Date(v); return d.toLocaleDateString("en-IN",{day:"numeric",month:"short"})+", "+d.toLocaleTimeString("en-IN",{hour:"2-digit",minute:"2-digit"}); }
 function money(n){ return "\u20B9"+Number(n).toLocaleString("en-IN"); }
 
+/* ---------- BUSINESS-HOURS PICKUP DEFAULT (9AM-9PM) ---------- */
+function defaultPickup(){
+  // Case 1: before 9AM  -> today 9:00 AM
+  // Case 2: 9AM-9PM     -> next available full hour (cap 9:00 PM)
+  // Case 3: after 9PM   -> next day 9:00 AM
+  var d=new Date();
+  var h=d.getHours(), m=d.getMinutes();
+  if(h<9){ d.setHours(9,0,0,0); return d; }
+  if(h>=21){ d.setDate(d.getDate()+1); d.setHours(9,0,0,0); return d; }
+  // between 9 and 21 -> round up to next hour
+  var nh = (m>0)? h+1 : h+1; // always move to next full hour from "now"
+  if(nh>21) nh=21;
+  d.setHours(nh,0,0,0);
+  return d;
+}
+
 /* ---------- BOOKING WIDGET ---------- */
 var fCity,fType,fStart,fEnd,bkBtn,bkNote;
 function initBookingWidget(){
   fCity=$("#f-city"); fType=$("#f-type"); fStart=$("#f-start"); fEnd=$("#f-end");
   bkBtn=$("#bk-btn"); bkNote=$("#bk-note");
-  var now=new Date(); now.setHours(now.getHours()+2,0,0,0);
-  var later=new Date(now); later.setDate(later.getDate()+1);
-  fStart.min=fmt(new Date()); fStart.value=fmt(now);
-  fEnd.min=fmt(now); fEnd.value=fmt(later);
+  var pick=defaultPickup();
+  var drop=new Date(pick); drop.setDate(drop.getDate()+1);
+  fStart.min=fmt(new Date()); fStart.value=fmt(pick);
+  fEnd.min=fmt(pick); fEnd.value=fmt(drop);
+  autoDetectCity(); // silently set pickup city from geolocation
   [fCity,fType,fStart,fEnd].forEach(function(e){ e.addEventListener("change",checkBooking); });
   [fStart,fEnd].forEach(function(e){ e.addEventListener("input",checkBooking); });
   bkBtn.addEventListener("click",function(){ if(checkBooking()) openModal({bike:fType.value||"Any bike",city:fCity.value}); });
@@ -755,8 +868,23 @@ function detailsRows(b){
   ];
   return rows.map(function(r){ return '<div class="dl-row"><span>'+r[0]+'</span><b>'+r[1]+'</b></div>'; }).join("");
 }
-function rulesHTML(){
-  return '<ul class="rules">'+RULES.map(function(r){ return '<li>'+ICON.check+'<span>'+r+'</span></li>'; }).join("")+'</ul>';
+/* Fixed feature pills for every bike (same across site) */
+function pillsHTML(){
+  return '<div class="mc-strip">'+
+    '<span>'+ICON.km+' 100 KM / Day</span>'+
+    '<span>'+ICON.deposit+' \u20B96 / Extra KM</span>'+
+    '<span>'+ICON.check+' Fully Serviced</span>'+
+    '<span>'+ICON.shield+' Sanitized Bike</span>'+
+  '</div>';
+}
+
+/* Compact visible key terms (orange) shown near booking on each card */
+function visibleTermsHTML(){
+  return '<div class="key-terms">'+
+    '<div class="kt-head">'+ICON.info+' Important rental terms</div>'+
+    '<ul>'+VISIBLE_TERMS.map(function(t){ return '<li>'+t+'</li>'; }).join("")+'</ul>'+
+    '<button class="tnc-link" data-tnc="1">Terms &amp; Conditions</button>'+
+  '</div>';
 }
 
 function cardHTML(b){
@@ -788,19 +916,11 @@ function cardHTML(b){
         '<div class="pcell"><small>15 Days</small><b>'+money(b.half)+'</b></div>'+
         '<div class="pcell"><small>Monthly</small><b>'+money(b.monthly)+'</b></div>'+
       '</div>'+
-      '<div class="mc-strip">'+
-        '<span>'+ICON.km+' '+b.km+'</span>'+
-        '<span>'+ICON.fuel+' '+b.fuel+'</span>'+
-        '<span>'+ICON.deposit+' Deposit '+money(b.deposit)+'</span>'+
-        '<span>'+ICON.cal+' '+b.year+' model</span>'+
-      '</div>'+
+      pillsHTML()+
+      visibleTermsHTML()+
       '<div class="acc">'+
         '<button class="acc-h" data-acc="details">'+'<span>Bike details</span>'+ICON.chev+'</button>'+
         '<div class="acc-c"><div class="dl">'+detailsRows(b)+'</div></div>'+
-      '</div>'+
-      '<div class="acc">'+
-        '<button class="acc-h" data-acc="rules">'+'<span>Rules &amp; regulations</span>'+ICON.chev+'</button>'+
-        '<div class="acc-c">'+rulesHTML()+'</div>'+
       '</div>'+
       bookBtn +
     '</div>'+
@@ -836,6 +956,8 @@ function wireCards(grid){
       c.style.maxHeight = open? null : (c.scrollHeight+"px");
     });
   });
+  // T&C links
+  $$(".tnc-link",grid).forEach(function(l){ l.addEventListener("click",openTnc); });
   // book buttons
   $$(".card-book",grid).forEach(function(btn){
     if(btn.classList.contains("dis")) return;
@@ -1013,6 +1135,36 @@ function wireStaticLinks(){
 var CITY_GEO={ "Pune":[18.5204,73.8567],"Lonavala":[18.7546,73.4062],"Mahabaleshwar":[17.9307,73.6477],"Mumbai":[19.0760,72.8777],"Goa":[15.2993,74.1240] };
 function haversine(a,b,c,d){ var R=6371,dLat=(c-a)*Math.PI/180,dLon=(d-b)*Math.PI/180; var x=Math.sin(dLat/2)*Math.sin(dLat/2)+Math.cos(a*Math.PI/180)*Math.cos(c*Math.PI/180)*Math.sin(dLon/2)*Math.sin(dLon/2); return R*2*Math.atan2(Math.sqrt(x),Math.sqrt(1-x)); }
 function nearestCity(lat,lng){ var best=null,bd=Infinity; for(var c in CITY_GEO){ var dd=haversine(lat,lng,CITY_GEO[c][0],CITY_GEO[c][1]); if(dd<bd){bd=dd;best=c;} } return {city:best,dist:Math.round(bd)}; }
+
+/* Silently auto-set pickup city from browser location (user can still change) */
+function autoDetectCity(){
+  if(!navigator.geolocation || !fCity) return;
+  navigator.geolocation.getCurrentPosition(function(pos){
+    if(fCity.value) return; // respect manual choice if already set
+    var near=nearestCity(pos.coords.latitude,pos.coords.longitude);
+    if(near.city){ fCity.value=near.city; checkBooking(); }
+  },function(){/* denied: leave as-is, manual select */},{enableHighAccuracy:false,timeout:7000,maximumAge:300000});
+}
+
+/* ---------- TERMS & CONDITIONS POPUP ---------- */
+function buildTncPopup(){
+  if($("#tnc-modal")) return;
+  var groups=POPUP_TERMS.map(function(g){
+    return '<div class="tnc-group"><h4>'+g[0]+'</h4><ul>'+g[1].map(function(x){return '<li>'+x+'</li>';}).join("")+'</ul></div>';
+  }).join("");
+  var el=document.createElement("div");
+  el.className="modal tnc"; el.id="tnc-modal"; el.setAttribute("aria-hidden","true");
+  el.innerHTML='<div class="sheet tnc-sheet" role="dialog" aria-modal="true" aria-label="Terms and Conditions">'+
+    '<div class="grab"></div>'+
+    '<div class="tnc-top"><h3>Terms &amp; Conditions</h3><button class="tnc-x" id="tnc-x" aria-label="Close">'+ICON.x+'</button></div>'+
+    '<div class="tnc-body">'+groups+'</div>'+
+  '</div>';
+  document.body.appendChild(el);
+  el.addEventListener("click",function(e){ if(e.target===el) closeTnc(); });
+  $("#tnc-x").addEventListener("click",closeTnc);
+}
+function openTnc(e){ if(e) e.preventDefault(); buildTncPopup(); var m=$("#tnc-modal"); m.classList.add("open"); document.body.style.overflow="hidden"; }
+function closeTnc(){ var m=$("#tnc-modal"); if(m) m.classList.remove("open"); document.body.style.overflow=""; }
 function initLocate(){
   var btn=$("#ab-loc"); if(!btn) return;
   btn.addEventListener("click",function(){
@@ -1052,6 +1204,9 @@ document.addEventListener("DOMContentLoaded",function(){
   initModal();
   wireStaticLinks();
   initLocate();
+  buildTncPopup();
+  var ft=$("#foot-tnc"); if(ft) ft.addEventListener("click",openTnc);
+  document.addEventListener("keydown",function(e){ if(e.key==="Escape") closeTnc(); });
   $$("[data-icon]").forEach(function(el){ var k=el.getAttribute("data-icon"); if(ICON[k]) el.insertAdjacentHTML("afterbegin",ICON[k]); });
 });
 
