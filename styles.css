@@ -497,6 +497,47 @@ footer{position:relative;z-index:2;border-top:1px solid var(--line);padding:54px
 
 .fleet-empty{grid-column:1/-1;text-align:center;color:var(--mute-2);padding:50px 0;font-size:1rem;display:none}
 
+
+/* ============ KEY TERMS (visible, orange) ============ */
+.key-terms{margin-top:14px;background:var(--flame-soft);border:1px solid rgba(255,106,0,.22);
+  border-radius:14px;padding:14px 16px}
+.key-terms .kt-head{display:flex;align-items:center;gap:7px;font-size:.8rem;font-weight:700;
+  letter-spacing:.02em;color:var(--flame-2);margin-bottom:9px;text-transform:uppercase}
+.key-terms .kt-head svg{width:15px;height:15px;flex-shrink:0}
+.key-terms ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.key-terms li{font-size:.82rem;line-height:1.5;color:#9a4d10;padding-left:14px;position:relative}
+.key-terms li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:var(--flame)}
+.tnc-link{margin-top:11px;background:none;border:none;padding:0;font-size:.78rem;font-weight:600;
+  color:var(--flame-2);text-decoration:underline;text-underline-offset:2px;cursor:pointer;transition:.2s}
+.tnc-link:hover{color:var(--flame)}
+
+/* ============ TERMS & CONDITIONS POPUP ============ */
+.modal.tnc{align-items:center}
+.tnc-sheet{max-width:600px;border-radius:24px;max-height:86vh;display:flex;flex-direction:column;padding:0}
+.tnc-sheet .grab{margin:14px auto 6px}
+.tnc-top{display:flex;align-items:center;justify-content:space-between;padding:8px 24px 14px;border-bottom:1px solid var(--line)}
+.tnc-top h3{font-size:1.3rem;font-weight:800}
+.tnc-x{width:38px;height:38px;border-radius:50%;background:var(--ink-4);border:1px solid var(--line-2);
+  display:flex;align-items:center;justify-content:center;color:var(--white);transition:.25s}
+.tnc-x:hover{background:var(--flame);border-color:var(--flame);color:#fff}
+.tnc-x svg{width:18px;height:18px}
+.tnc-body{overflow:auto;padding:20px 24px 28px;display:flex;flex-direction:column;gap:18px}
+.tnc-group h4{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--flame-2);margin-bottom:9px}
+.tnc-group ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.tnc-group li{font-size:.9rem;line-height:1.55;color:var(--mute);display:flex;gap:9px;align-items:flex-start}
+.tnc-group li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--flame);flex-shrink:0;margin-top:8px}
+
+@media(min-width:921px){
+  .modal.tnc{align-items:center}
+  .tnc-sheet{border-radius:24px}
+}
+@media(max-width:680px){
+  .modal.tnc{align-items:flex-end}
+  .tnc-sheet{border-radius:24px 24px 0 0;max-height:92vh}
+  .key-terms li{font-size:.8rem}
+}
+
 /* ============ RESPONSIVE ============ */
 @media(max-width:920px){
   .fleet-grid,.steps,.trust-grid,.routes{grid-template-columns:repeat(2,1fr)}
