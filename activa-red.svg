@@ -1,0 +1,23 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#c0392b"/><stop offset="1" stop-color="#8e2820"/></linearGradient>
+<radialGradient id="sh" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="400" cy="430" rx="300" ry="34" fill="url(#sh)"/>
+<!-- wheels -->
+<circle cx="225" cy="380" r="78" fill="#1a1a1a"/><circle cx="225" cy="380" r="44" fill="#2a2a2a"/><circle cx="225" cy="380" r="16" fill="#555"/>
+<circle cx="585" cy="380" r="78" fill="#1a1a1a"/><circle cx="585" cy="380" r="44" fill="#2a2a2a"/><circle cx="585" cy="380" r="16" fill="#555"/>
+<!-- body -->
+<path d="M165 360 Q150 250 260 250 L470 250 Q540 250 560 320 L600 360 Q500 330 420 335 L300 340 Q230 340 165 360Z" fill="url(#bg)"/>
+<path d="M250 255 Q230 180 300 175 L330 175 Q360 180 360 250Z" fill="url(#bg)"/>
+<!-- floorboard -->
+<path d="M300 345 Q400 330 470 335 L500 360 L320 365Z" fill="#8e2820"/>
+<!-- seat -->
+<path d="M330 250 Q420 235 480 255 Q470 280 420 282 L355 280 Q335 270 330 250Z" fill="#1a1a1a"/>
+<!-- handle -->
+<path d="M300 175 Q280 150 250 155" stroke="#1a1a1a" stroke-width="14" fill="none" stroke-linecap="round"/>
+<rect x="285" y="195" width="55" height="48" rx="10" fill="#1a1a1a"/>
+<!-- headlight -->
+<ellipse cx="252" cy="205" rx="16" ry="22" fill="#ffd34d"/>
+<!-- front fender -->
+<path d="M165 360 Q170 320 215 312 Q255 315 262 360" stroke="#8e2820" stroke-width="12" fill="none"/>
+</svg>

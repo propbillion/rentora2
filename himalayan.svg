@@ -1,0 +1,30 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="av" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d35400"/><stop offset="1" stop-color="#a04000"/></linearGradient>
+<radialGradient id="sh5" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="400" cy="438" rx="330" ry="28" fill="url(#sh5)"/>
+<!-- knobby tall wheels -->
+<circle cx="200" cy="372" r="95" fill="#121212"/><circle cx="200" cy="372" r="56" fill="#1d1d1d"/><circle cx="200" cy="372" r="12" fill="#666"/>
+<circle cx="610" cy="372" r="95" fill="#121212"/><circle cx="610" cy="372" r="56" fill="#1d1d1d"/><circle cx="610" cy="372" r="12" fill="#666"/>
+<!-- frame -->
+<path d="M250 355 L370 300 L490 302 L570 360" stroke="#444" stroke-width="13" fill="none" stroke-linecap="round"/>
+<!-- engine -->
+<rect x="365" y="305" width="110" height="78" rx="12" fill="#2a2a2a"/>
+<rect x="378" y="318" width="84" height="12" rx="4" fill="#444"/><rect x="378" y="338" width="84" height="12" rx="4" fill="#444"/><rect x="378" y="358" width="84" height="10" rx="4" fill="#444"/>
+<!-- tall tank -->
+<path d="M330 258 Q400 232 472 258 Q474 298 438 304 L360 302 Q330 290 330 258Z" fill="url(#av)"/>
+<!-- seat -->
+<path d="M455 270 Q565 258 590 282 Q582 298 510 298 L460 295Z" fill="#111"/>
+<!-- tall windscreen + beak -->
+<path d="M300 255 Q330 200 365 205 L350 258Z" fill="#222" opacity=".75"/>
+<path d="M255 268 Q270 250 300 252 L295 290 Q265 288 255 268Z" fill="url(#av)"/>
+<!-- handlebar -->
+<path d="M320 258 Q300 205 262 202" stroke="#222" stroke-width="13" fill="none" stroke-linecap="round"/>
+<!-- headlight -->
+<rect x="262" y="262" width="38" height="32" rx="8" fill="#ffd34d"/>
+<!-- long fork -->
+<path d="M285 285 L205 358" stroke="#555" stroke-width="13" stroke-linecap="round"/>
+<!-- luggage rack -->
+<rect x="500" y="262" width="70" height="10" rx="4" fill="#333"/>
+<!-- raised front fender -->
+<path d="M150 320 Q200 300 255 312" stroke="#a04000" stroke-width="11" fill="none" stroke-linecap="round"/>
+</svg>

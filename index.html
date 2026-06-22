@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Rentorra — Premium Bike Rentals | From City Streets to Mountain Peaks</title>
+<meta name="description" content="Rent premium, well-maintained motorcycles and scooters with Rentorra. Doorstep delivery, transparent pricing, zero hidden charges. Book in 60 seconds on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- AMBIENT GLOW -->
+<div class="aura"><b></b><b></b><b></b></div>
+
+<!-- ===== NAV ===== -->
+<header id="hdr">
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand">
+      <img src="assets/logo-white.png" alt="Rentorra logo">
+      <span>RENT<i>O</i>RRA</span>
+    </a>
+    <div class="navlinks">
+      <a href="#fleet">Fleet</a>
+      <a href="#plans">Plans</a>
+      <a href="#routes">Routes</a>
+      <a href="#how">How it works</a>
+      <a href="#trust">Why us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book" class="nav-cta" id="nav-cta" data-icon="wa">Book now</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <div class="mob-menu">
+      <a href="#fleet">Fleet</a>
+      <a href="#plans">Plans</a>
+      <a href="#routes">Routes</a>
+      <a href="#how">How it works</a>
+      <a href="#trust">Why us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Book now</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== HERO ===== -->
+<div id="top"></div>
+<section class="hero">
+  <div class="hero-beam"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="dot"></span> From city streets to mountain peaks</span>
+    <h1 class="reveal">Ride anything. <span class="gl">Anywhere.</span><br>On your terms.</h1>
+    <p class="sub reveal">Premium, fully-serviced bikes and scooters delivered to your door. Transparent pricing, zero hidden charges, and a booking that takes 60 seconds — straight to WhatsApp.</p>
+    <div class="hero-stats reveal">
+      <div class="st"><b>4.9★</b><small>Rider rating</small></div>
+      <div class="st"><b>12,000+</b><small>Rides completed</small></div>
+      <div class="st"><b>19</b><small>Bikes in fleet</small></div>
+      <div class="st"><b>Zero</b><small>Hidden charges</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BOOKING WIDGET ===== -->
+<div class="wrap"><div class="booking reveal" id="book">
+  <div class="bk-card">
+    <div class="bk-head"><h3>Find your ride</h3><span class="lbl">Live availability</span></div>
+    <div class="bk-grid">
+      <div class="field"><label>Pick-up city</label>
+        <select id="f-city"><option value="">Select city</option>
+          <option>Pune</option><option>Lonavala</option><option>Mahabaleshwar</option><option>Mumbai</option><option>Goa</option>
+        </select></div>
+      <div class="field"><label>Bike type</label>
+        <select id="f-type"><option value="">Any bike</option>
+          <option>Honda Activa</option><option>TVS Jupiter</option><option>Jawa 42</option><option>KTM Duke 200</option><option>Other / Premium</option>
+        </select></div>
+      <div class="field"><label>Pick-up date &amp; time</label><input type="datetime-local" id="f-start"></div>
+      <div class="field"><label>Drop-off date &amp; time</label><input type="datetime-local" id="f-end"></div>
+    </div>
+    <div class="bk-foot">
+      <div class="bk-note" id="bk-note">Fill the details to unlock booking</div>
+      <button class="bk-btn" id="bk-btn">Select details to continue</button>
+    </div>
+  </div>
+</div></div>
+
+<!-- ===== FLEET / MARKETPLACE ===== -->
+<section class="blk" id="fleet">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-eye">Our inventory</span>
+      <h2>Pick your ride. Booked in seconds.</h2>
+      <p>Real bikes, real availability. Every machine is serviced, sanitised and safety-checked before pickup. Swipe through photos, check pricing and rules, then book on WhatsApp.</p>
+    </div>
+    <div class="fleet-filter reveal">
+      <button class="chip active" data-cat="all">All bikes</button>
+      <button class="chip" data-cat="available">🟢 Available now</button>
+      <button class="chip" data-cat="Scooter">Scooters</button>
+      <button class="chip" data-cat="Cruiser">Cruisers</button>
+      <button class="chip" data-cat="Sports">Sports</button>
+      <button class="chip" data-cat="Adventure">Adventure</button>
+    </div>
+    <div class="fleet-grid market" id="fleet-grid"></div>
+  </div>
+</section>
+
+<!-- ===== PLANS / PRICING ===== -->
+<section class="blk" id="plans">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="sec-eye">Plans &amp; pricing</span>
+      <h2>Pick a plan that fits your ride</h2>
+      <p>Honest, all-inclusive pricing. Helmet, basic insurance and 24×7 support come with every plan — no asterisks.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <div class="pname">Hourly</div>
+        <div class="pp"><b>₹39</b><small>/ hour onwards</small></div>
+        <div class="psub">Quick errands &amp; short city hops.</div>
+        <ul>
+          <li data-icon="check">Minimum 4 hours</li>
+          <li data-icon="check">Free helmet included</li>
+          <li data-icon="check">Pay after we confirm</li>
+        </ul>
+        <button class="pbtn" data-plan="Hourly" data-icon="wa">Choose hourly</button>
+      </div>
+      <div class="plan feat reveal">
+        <div class="pname">Daily</div>
+        <div class="pp"><b>₹399</b><small>/ day onwards</small></div>
+        <div class="psub">The all-rounder for day trips.</div>
+        <ul>
+          <li data-icon="check">120 km/day free</li>
+          <li data-icon="check">Free helmet + 1 pillion helmet</li>
+          <li data-icon="check">Doorstep delivery available</li>
+          <li data-icon="check">24×7 road support</li>
+        </ul>
+        <button class="pbtn" data-plan="Daily" data-icon="wa">Choose daily</button>
+      </div>
+      <div class="plan reveal">
+        <div class="pname">Weekly</div>
+        <div class="pp"><b>₹2,499</b><small>/ week onwards</small></div>
+        <div class="psub">Long getaways &amp; ghat rides.</div>
+        <ul>
+          <li data-icon="check">Best per-day value</li>
+          <li data-icon="check">1000 km free</li>
+          <li data-icon="check">Free delivery &amp; pickup</li>
+        </ul>
+        <button class="pbtn" data-plan="Weekly" data-icon="wa">Choose weekly</button>
+      </div>
+      <div class="plan reveal">
+        <div class="pname">Monthly</div>
+        <div class="pp"><b>₹6,999</b><small>/ month onwards</small></div>
+        <div class="psub">Daily commute, sorted.</div>
+        <ul>
+          <li data-icon="check">Lowest daily rate</li>
+          <li data-icon="check">Unlimited km options</li>
+          <li data-icon="check">Free servicing during term</li>
+        </ul>
+        <button class="pbtn" data-plan="Monthly" data-icon="wa">Choose monthly</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROUTES / DESTINATIONS ===== -->
+<section class="blk" id="routes">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-eye">Popular rides</span>
+      <h2>Where will Rentorra take you?</h2>
+      <p>Hand-picked rides our customers love. Tap any route and we’ll suggest the perfect bike for it.</p>
+    </div>
+    <div class="routes">
+      <div class="route reveal">
+        <div class="bg" style="background-image:linear-gradient(135deg,#1d2a1f,#0e1410)"></div>
+        <span class="km">Pune → Lonavala · 65 km</span>
+        <h3>Lonavala &amp; Khandala</h3>
+        <p>Misty ghats, waterfalls and that classic monsoon ride. Cruisers shine here.</p>
+        <button class="rbtn" data-route="Lonavala" data-icon="arrow">Plan this ride</button>
+      </div>
+      <div class="route reveal">
+        <div class="bg" style="background-image:linear-gradient(135deg,#2a2114,#13100a)"></div>
+        <span class="km">Pune → Mahabaleshwar · 120 km</span>
+        <h3>Mahabaleshwar</h3>
+        <p>Strawberry farms, valley viewpoints and twisty roads. Adventure bikes recommended.</p>
+        <button class="rbtn" data-route="Mahabaleshwar" data-icon="arrow">Plan this ride</button>
+      </div>
+      <div class="route reveal">
+        <div class="bg" style="background-image:linear-gradient(135deg,#26171a,#120b0d)"></div>
+        <span class="km">Pune → Tamhini · 55 km</span>
+        <h3>Tamhini Ghat</h3>
+        <p>Waterfall season favourite — lush, green and made for slow cruising.</p>
+        <button class="rbtn" data-route="Tamhini Ghat" data-icon="arrow">Plan this ride</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="blk" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-eye">How it works</span>
+      <h2>Booked in three easy moves</h2>
+      <p>No long forms, no app downloads, no waiting on hold. You pick, you confirm on WhatsApp, you ride.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Pick bike &amp; dates</h3><p>Choose a machine and your pick-up and drop-off slots right here. Pricing shows instantly — what you see is what you pay.</p></div>
+      <div class="step reveal"><h3>Confirm on WhatsApp</h3><p>One tap sends your full booking to our team with every detail pre-filled. No re-typing, no confusion.</p></div>
+      <div class="step reveal"><h3>Ride away</h3><p>We confirm availability, share docs, and deliver the bike to your location. Helmet included. Hit the road.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DELIVERY + DOCUMENTS ===== -->
+<section class="blk" id="deliver">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <div class="sec-head" style="margin-bottom:30px">
+          <span class="sec-eye">Documents &amp; delivery</span>
+          <h2>Simple to start, safe to ride</h2>
+          <p>Keep these ready and you’re road-bound in minutes. We verify gently and never hold your originals.</p>
+        </div>
+        <div class="docs-list">
+          <div class="doc"><div class="di">🪪</div><div><h4>Valid driving licence</h4><p>Two-wheeler licence, original for verification at handover.</p></div></div>
+          <div class="doc"><div class="di">🆔</div><div><h4>Government ID proof</h4><p>Aadhaar, passport or voter ID — any one works.</p></div></div>
+          <div class="doc"><div class="di">📸</div><div><h4>One quick selfie</h4><p>A handover photo for your safety and ours. That’s it.</p></div></div>
+          <div class="doc"><div class="di">💳</div><div><h4>Refundable deposit</h4><p>Small security deposit, returned in full on safe return.</p></div></div>
+        </div>
+      </div>
+      <div class="deliver-card reveal">
+        <h3>Doorstep delivery, step by step</h3>
+        <p>From tap to throttle — here’s exactly how it goes.</p>
+        <div class="dsteps">
+          <div class="dstep"><div class="dn">1</div><div class="dc"><h4>You book on WhatsApp</h4><p>Send your details, we confirm the bike in minutes.</p></div></div>
+          <div class="dstep"><div class="dn">2</div><div class="dc"><h4>We service &amp; sanitise</h4><p>Full safety check, fuel-ready, helmet packed.</p></div></div>
+          <div class="dstep"><div class="dn">3</div><div class="dc"><h4>Delivered to your spot</h4><p>Bike reaches your door or pickup point on time.</p></div></div>
+          <div class="dstep"><div class="dn">4</div><div class="dc"><h4>You ride, we’re on call</h4><p>24×7 support the whole way. Drop it back when done.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST ===== -->
+<section class="blk" id="trust">
+  <div class="wrap">
+    <div class="sec-head reveal"><span class="sec-eye">Why riders trust us</span>
+      <h2>Your safety is the whole point</h2>
+    </div>
+    <div class="trust-band reveal">
+      <div class="trust-grid">
+        <div class="tr"><div class="ic">🛡️</div><h4>Insured &amp; verified bikes</h4><p>Every machine is registered, insured, and inspected. You ride covered, not exposed.</p></div>
+        <div class="tr"><div class="ic">🪖</div><h4>Helmet always included</h4><p>ISI-marked helmets with every booking, free. Extra helmet on request for your pillion.</p></div>
+        <div class="tr"><div class="ic">🔧</div><h4>Serviced every ride</h4><p>Brakes, tyres, lights, fuel — checked before the keys reach your hand. Zero compromises.</p></div>
+        <div class="tr"><div class="ic">📞</div><h4>24×7 road support</h4><p>Stuck anywhere? One call and we move. Real humans, real help, on every ride.</p></div>
+      </div>
+      <div class="trust-code">
+        <span class="badge">SAFE-RIDE&nbsp;PROMISE</span>
+        <p><b>100% safe booking, guaranteed.</b> No advance scams, no fake listings, no surprise fees — you only confirm after you speak to a real person. Quote code <b>RENTORRA-SAFE</b> on WhatsApp for free doorstep delivery on your first ride.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="blk" id="reviews">
+  <div class="wrap rev-wrap">
+    <div class="sec-head reveal"><span class="sec-eye">Real riders, real words</span>
+      <h2>Loved by thousands of riders</h2>
+      <p>Drag to scroll, or just let them roll by. Every review is from a verified Rentorra booking.</p>
+    </div>
+  </div>
+  <div class="rev-track-mask" id="rev-mask"><div class="rev-track" id="rev-track"></div></div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="blk" id="faq">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="sec-eye">Good to know</span>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq reveal">
+      <div class="qa"><button><span class="qi">Do you deliver the bike to my location?</span><span class="qx"></span></button>
+        <div class="ans"><p>Yes. We offer doorstep delivery and pickup across our serviced cities. Tap “Bike Near Me” at the bottom and we’ll arrange the closest bike to you. Delivery charges, if any, are told upfront on WhatsApp — never hidden.</p></div></div>
+      <div class="qa"><button><span class="qi">What documents do I need to rent?</span><span class="qx"></span></button>
+        <div class="ans"><p>A valid two-wheeler driving licence, one government ID (Aadhaar, passport or voter ID), and a quick handover selfie. A small refundable deposit applies and is returned in full on safe return.</p></div></div>
+      <div class="qa"><button><span class="qi">Is fuel included in the price?</span><span class="qx"></span></button>
+        <div class="ans"><p>Bikes are handed over fuel-ready. Running fuel is on you — return it at a similar level. We’ll explain the exact policy for your bike on WhatsApp before you confirm.</p></div></div>
+      <div class="qa"><button><span class="qi">What if the bike breaks down?</span><span class="qx"></span></button>
+        <div class="ans"><p>You’re never stranded. Our 24×7 road support is one call away and we move fast — repair, swap or assist, whatever it takes to get you riding again.</p></div></div>
+      <div class="qa"><button><span class="qi">How do I pay? Any advance?</span><span class="qx"></span></button>
+        <div class="ans"><p>No blind advance. You only confirm and pay after you speak to a real person and the bike is confirmed. That’s the Rentorra Safe-Ride Promise — zero scams, zero surprise fees.</p></div></div>
+      <div class="qa"><button><span class="qi">Can I extend my booking mid-ride?</span><span class="qx"></span></button>
+        <div class="ans"><p>Absolutely. Message us on WhatsApp before your slot ends and we’ll extend it instantly, subject to availability. No need to come back to the website.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="final">
+  <div class="wrap">
+    <div class="final-card reveal">
+      <h2>Your next ride is one tap away</h2>
+      <p>Stop comparing endless tabs. The right bike, the right price, and a real human on the other end — all here.</p>
+      <a class="big-cta" id="final-cta" href="#" data-icon="wa">Chat &amp; book on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand"><img src="assets/logo-white.png" alt="Rentorra">
+        <p>Rentorra — premium bike rentals from city streets to mountain peaks. Ride well-maintained machines, booked the easy way.</p>
+      </div>
+      <div class="foot-col"><h5>Explore</h5>
+        <a href="#fleet">Our fleet</a><a href="#plans">Plans &amp; pricing</a><a href="#routes">Popular rides</a><a href="#reviews">Reviews</a>
+      </div>
+      <div class="foot-col"><h5>Support</h5>
+        <a href="#how">How it works</a><a href="#deliver">Documents</a><a href="#trust">Safety promise</a><a href="#faq">FAQ</a>
+      </div>
+      <div class="foot-col"><h5>Reach us</h5>
+        <a href="#" id="foot-wa">WhatsApp booking</a><a href="#" id="foot-call">Call us</a><a href="#book">Book a bike</a><a href="#">Pune · Lonavala · Goa</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <small>© 2026 Rentorra. All rights reserved.</small>
+      <small>Bookings handled personally by <a href="#" id="foot-wa2">our team</a></small>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== STICKY ACTION BAR ===== -->
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="ab ab-call" id="ab-call" href="tel:+918888978552">
+    <span data-icon="call"></span><small>Call</small>
+  </a>
+  <a class="ab ab-wa" id="ab-wa" href="#">
+    <span data-icon="wa"></span><small>WhatsApp</small>
+  </a>
+  <button class="ab ab-loc" id="ab-loc" type="button">
+    <span class="spin"></span>
+    <span class="loc-ic" data-icon="pin"></span>
+    <small>Bike Near Me</small>
+  </button>
+</nav>
+
+<!-- ===== BOOKING MODAL ===== -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="sheet" role="dialog" aria-modal="true" aria-label="Confirm booking">
+    <div class="grab"></div>
+    <h3>Confirm your booking</h3>
+    <p>Add your name so our team can call you back fast. Everything else is already filled in.</p>
+    <div class="sf"><label>Your name</label><input type="text" id="m-name" placeholder="e.g. Rahul Sharma" autocomplete="name"></div>
+    <div class="sf-row">
+      <div class="sf"><label>Your phone</label><input type="tel" id="m-phone" placeholder="10-digit mobile" autocomplete="tel"></div>
+      <div class="sf"><label>Pick-up city</label><input type="text" id="m-city" readonly></div>
+    </div>
+    <div class="summary" id="m-summary"></div>
+    <button class="send" id="m-send">Add your name to continue</button>
+    <p class="hint">You’ll be taken to WhatsApp with all details ready. No payment now — confirm after we call.</p>
+    <button id="m-close" style="position:absolute;left:-9999px">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

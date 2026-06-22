@@ -1,0 +1,26 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="sp" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#1f9d55"/><stop offset="1" stop-color="#157038"/></linearGradient>
+<radialGradient id="sh4" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="400" cy="432" rx="320" ry="30" fill="url(#sh4)"/>
+<circle cx="210" cy="378" r="84" fill="#141414"/><circle cx="210" cy="378" r="48" fill="#1f1f1f"/><circle cx="210" cy="378" r="12" fill="#666"/>
+<circle cx="600" cy="378" r="84" fill="#141414"/><circle cx="600" cy="378" r="48" fill="#1f1f1f"/><circle cx="600" cy="378" r="12" fill="#666"/>
+<!-- swingarm -->
+<path d="M470 360 L590 375" stroke="#333" stroke-width="14" stroke-linecap="round"/>
+<!-- aggressive fairing -->
+<path d="M255 320 Q300 250 400 250 L480 255 Q520 270 510 320 L470 330 L300 332 Q255 332 255 320Z" fill="url(#sp)"/>
+<!-- raised tail -->
+<path d="M455 258 Q560 235 590 255 Q575 285 500 290 L460 285Z" fill="url(#sp)"/>
+<path d="M540 250 L595 240 L590 262 Z" fill="#157038"/>
+<!-- clip-on bars -->
+<path d="M300 270 Q280 248 258 250" stroke="#222" stroke-width="10" fill="none" stroke-linecap="round"/>
+<!-- sharp headlight -->
+<path d="M255 290 L300 268 L308 300 L262 312Z" fill="#ffd34d"/>
+<!-- windscreen -->
+<path d="M295 265 Q330 245 350 252 L330 285Z" fill="#222" opacity=".7"/>
+<!-- USD fork -->
+<path d="M300 285 L215 365" stroke="#444" stroke-width="13" stroke-linecap="round"/>
+<!-- engine -->
+<rect x="360" y="312" width="100" height="60" rx="10" fill="#2a2a2a"/>
+<!-- underbelly exhaust -->
+<path d="M420 375 Q470 395 520 388" stroke="#888" stroke-width="12" fill="none" stroke-linecap="round"/>
+</svg>

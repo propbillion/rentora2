@@ -1,0 +1,25 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="tk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b6cb0"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient>
+<radialGradient id="sh2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
+<ellipse cx="400" cy="432" rx="320" ry="32" fill="url(#sh2)"/>
+<circle cx="205" cy="375" r="88" fill="#161616"/><circle cx="205" cy="375" r="50" fill="#222"/><circle cx="205" cy="375" r="14" fill="#555"/>
+<circle cx="605" cy="375" r="88" fill="#161616"/><circle cx="605" cy="375" r="50" fill="#222"/><circle cx="605" cy="375" r="14" fill="#555"/>
+<!-- frame -->
+<path d="M250 360 L360 290 L470 295 L560 360" stroke="#333" stroke-width="12" fill="none" stroke-linecap="round"/>
+<!-- engine -->
+<rect x="360" y="300" width="120" height="80" rx="12" fill="#2a2a2a"/>
+<rect x="375" y="312" width="90" height="14" rx="4" fill="#444"/><rect x="375" y="332" width="90" height="14" rx="4" fill="#444"/><rect x="375" y="352" width="90" height="12" rx="4" fill="#444"/>
+<!-- tank -->
+<path d="M330 270 Q400 245 470 268 Q472 300 440 305 L360 303 Q330 295 330 270Z" fill="url(#tk)"/>
+<!-- seat -->
+<path d="M455 272 Q560 262 580 285 Q575 300 520 300 L460 298Z" fill="#111"/>
+<!-- handlebar -->
+<path d="M330 270 Q300 220 265 218" stroke="#222" stroke-width="12" fill="none" stroke-linecap="round"/>
+<circle cx="262" cy="216" r="9" fill="#444"/>
+<!-- headlight -->
+<circle cx="285" cy="255" r="26" fill="#ffd34d"/><circle cx="285" cy="255" r="26" fill="none" stroke="#222" stroke-width="6"/>
+<!-- front fork -->
+<path d="M285 270 L210 360" stroke="#333" stroke-width="12" stroke-linecap="round"/>
+<!-- exhaust -->
+<path d="M480 360 Q560 365 600 350" stroke="#888" stroke-width="14" fill="none" stroke-linecap="round"/>
+</svg>
